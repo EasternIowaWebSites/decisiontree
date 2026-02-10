@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marketing Services for Small Businesses | Decision Tree</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Decision Tree provides online marketing with pay per click ads or also general advertising advice for small or large campaigns.">
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+
+<section class="logo1">
+  <img src="assets/logo.svg" class="logo" alt="Decision Tree">
+</section>
+
+<main class="frame">
+
+<header class="frame-header">
+  <div class="nav-bar">
+
+    <button class="hamburger" id="menuToggle" aria-label="Open menu">
+      ☰
+    </button>
+
+    <nav class="nav" id="mainNav">
+      <a href="homepage.html">Home</a>
+
+      <li class="has-submenu">
+        <a href="#" class="submenu-toggle">Services</a>
+        <ul class="submenu">
+          <li><a href="bookkeeping.html">Bookkeeping</a></li>
+          <li><a href="web-design.html">Web Design</a></li>
+          <li><a href="marketing.html">Marketing</a></li>
+    
+        </ul>
+      </li>
+
+      <a href="blogs.html" class="active">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="blog-list">
+
+  <header class="blog-header">
+    <h1>Blog</h1>
+    <p>Insights, guides, and practical advice on bookkeeping, marketing, and web design for small businesses.</p>
+  </header>
+
+  <article class="blog-card">
+    <h2>
+      <a href="blog/how-to-choose-a-bookkeeper.html">
+        How to Choose the Right Bookkeeper for Your Small Business
+      </a>
+    </h2>
+    <p>
+      Learn what to look for in a bookkeeper, common red flags, and how the right choice can save you time and money.
+    </p>
+    <span class="blog-meta">January 16, 2026 · Bookkeeping</span>
+  </article>
+
+  <article class="blog-card">
+    <h2>
+      <a href="blog/what-is-seo.html">
+        What Is SEO? A Simple Explanation for Business Owners
+      </a>
+    </h2>
+    <p>
+      A plain-English breakdown of SEO, how it works, and what actually matters if you want to rank on Google.
+    </p>
+    <span class="blog-meta">January 10, 2026 · Marketing</span>
+  </article>
+
+  <article class="blog-card">
+    <h2>
+      <a href="blog/why-your-website-isnt-converting.html">
+        Why Your Website Isn’t Converting Visitors Into Customers
+      </a>
+    </h2>
+    <p>
+      Discover the most common website mistakes that cost you leads—and how to fix them without a full redesign.
+    </p>
+    <span class="blog-meta">January 4, 2026 · Web Design</span>
+  </article>
+
+</section>
+
+
+<footer class="pacs-footer">
+  <div class="pacs-footer-container">
+
+    <div class="footer-brand">
+      <img src="assets/logo.svg" alt="PACS Logo" class="footer-logo">
+      <p>
+        PACS Professionals provides reliable bookkeeping services for small businesses, helping owners stay organized, compliant, and confident.
+      </p>
+    </div>
+
+    <div class="footer-menu">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="bookkeeping.html">Bookkeeping</a></li>
+        <li><a href="web-design.html">Web Design</a></li>
+        <li><a href="marketing.html" clas="active">Marketing</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-menu">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="blogs.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-menu">
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© PACS Professionals. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("mainNav");
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    nav.classList.toggle("open");
+  });
+
+  nav.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+
+  document.addEventListener("click", () => {
+    nav.classList.remove("open");
+  });
+</script>
+
+<script>
+document.querySelectorAll(".submenu-toggle").forEach(link => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    this.parentElement.classList.toggle("open");
+  });
+});
+</script>
+
+</body>
+</html>

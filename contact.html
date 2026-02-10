@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bookkeeping Services for Small Businesses | PACS Professionals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional bookkeeping services for small businesses. PACS helps you stay organized, compliant, and confident with your finances.">
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+
+<section class="logo1">
+  <img src="assets/logo.svg" class="logo" alt="PACS Professionals">
+</section>
+
+<main class="frame">
+
+<header class="frame-header">
+  <div class="nav-bar">
+
+    <button class="hamburger" id="menuToggle" aria-label="Open menu">
+      ☰
+    </button>
+
+    <nav class="nav" id="mainNav">
+      <a href="homepage.html">Home</a>
+
+      <li class="has-submenu">
+        <a href="#" class="submenu-toggle">Services</a>
+        <ul class="submenu">
+          <li><a href="bookkeeping.html">Bookkeeping</a></li>
+          <li><a href="web-design.html">Web Design</a></li>
+          <li><a href="marketing.html">Marketing</a></li>
+    
+        </ul>
+      </li>
+
+      <a href="blogs.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+
+<section class="contact-page">
+  <div class="contact-container">
+
+    <div class="contact-header">
+      <h1>Contact Us</h1>
+      <p>
+        Have questions about bookkeeping, marketing, or web design?
+        Reach out today and let’s talk about how we can support your business. Call 563-661-8251
+      </p>
+    </div>
+    <div class="formdesktop">
+   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSekk4VfSTnYc1vo6rteXRfCKi0rrJSSBkvs4_9C6QQDFnZHMw/viewform?embedded=true" width="1000" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+   </div>
+   <div class="formmobile">
+   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSekk4VfSTnYc1vo6rteXRfCKi0rrJSSBkvs4_9C6QQDFnZHMw/viewform?embedded=true" width="300" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+   </div>
+
+    <!-- CONTACT -->
+<section class="pacs-contact" id="contact">
+  <div class="pacs-contact-container">
+
+    <div class="pacs-contact-header">
+      <h2>Contact Us</h2>
+      <p>Have questions about our bookkeeping services? Reach out and we’ll help you get started.</p>
+    </div>
+
+    <div class="pacs-contact-cards">
+
+      <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <h3>Call or Text</h3>
+        <a href="tel:+15636618251" class="contact-link">(563) 661-8251</a>
+        <p>Available Mon through Friday 8am - 3pm</p>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">✉️</div>
+        <h3>Email Us</h3>
+        <a href="mailto:LeoBiehl@decisiontreepartner.com" class="contact-link">
+          LeoBiehl@decisiontreepartner.com
+        </a>
+        <p>We typically respond within 24 hours</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer class="pacs-footer">
+  <div class="pacs-footer-container">
+
+    
+
+    <div class="footer-brand">
+      <img src="assets/logo.svg" alt="PACS Logo" class="footer-logo">
+      <p>
+        Decision Tree provides reliable bookkeeping services for small businesses, helping owners stay organized, compliant, and confident.
+      </p>
+    </div>
+
+    <div class="footer-menu">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="bookkeeping.html">Bookkeeping</a></li>
+        <li><a href="web-design.html">Web Design</a></li>
+        <li><a href="marketing.html">Marketing</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-menu">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="blogs.html">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-menu">
+      
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© PACS Professionals. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("mainNav");
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    nav.classList.toggle("open");
+  });
+
+  nav.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+
+  document.addEventListener("click", () => {
+    nav.classList.remove("open");
+  });
+</script>
+
+<script>
+document.querySelectorAll(".submenu-toggle").forEach(link => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    this.parentElement.classList.toggle("open");
+  });
+});
+</script>
+
+</body>
+</html>
